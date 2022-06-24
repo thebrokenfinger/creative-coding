@@ -1,0 +1,13 @@
+{
+  "name": "sketches",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "canvas-sketch sketch.js"
+  },
+  "dependencies": {
+    "canvas-sketch": "^0.7.5",
+    "canvas-sketch-cli": "^1.11.15"
+  }
+}
