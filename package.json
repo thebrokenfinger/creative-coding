@@ -1,16 +1,11 @@
 {
-  "name": "creative-coding",
+  "name": "basic-canvas",
   "version": "0.0.l",
-  "description": "creative coding with javascript",
-  "source": "src/index.html",
+  "description": "basic canvas example",
   "author": "Yatharth K <yatharth@hey.com>",
   "license": "MIT",
   "private": true,
-  "scripts": {
-    "dev": "parcel",
-    "build": "parcel build"
-  },
-  "devDependencies": {
-    "parcel": "^2.6.2"
-  }
+  "workspaces": [
+    "packages/*"
+  ]
 }
