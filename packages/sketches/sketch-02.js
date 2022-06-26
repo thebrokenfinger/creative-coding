@@ -3,7 +3,7 @@ const math = require("canvas-sketch-util/math");
 const random = require("canvas-sketch-util/random");
 
 const settings = {
-  dimensions: [2048, 2048],
+  dimensions: [1080, 1080],
 };
 /* 
 const degToRad = (degrees) => (degrees / 180) * Math.PI;
