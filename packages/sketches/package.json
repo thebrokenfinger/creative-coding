@@ -7,6 +7,7 @@
     "sketch": "canvas-sketch"
   },
   "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "canvas-sketch": "^0.7.5",
     "canvas-sketch-cli": "^1.11.15",
     "canvas-sketch-util": "^1.10.0"
