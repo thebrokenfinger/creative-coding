@@ -4,6 +4,8 @@ const settings = {
   dimensions: [1080, 1080],
 };
 
+let manager; // canvas manager
+
 let text = "A";
 let fontSize = 1200;
 let fontFamily = "serif";
@@ -32,11 +34,20 @@ const sketch = () => {
 
     context.beginPath();
     context.rect(mx, my, mw, mh);
-    context.stroke();
+    // context.stroke(); // letter container border
 
     context.fillText(text, 0, 0);
     context.restore();
   };
 };
 
-canvasSketch(sketch, settings);
+window.addEventListener("keyup", (e) => {
+  text = e.key;
+  manager.render();
+});
+
+const start = async () => {
+  manager = await canvasSketch(sketch, settings);
+};
+
+start();
